@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto+Mono:wght@600&family=Roboto:wght@500&display=swap');
+
+
+
+.mobile_landing_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.intro_face{
+    width: 50vw;
+    height: 50vh;
+    /* transition-delay: 3s ; */
+}
+#my_name_span{
+    position: relative;
+    overflow: hidden;
+}
+#my_name>h2{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+#my_name.clicked>h2{
+    animation: typeout 6s steps(13) 0s 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+.mob_subcontainer{
+    width: 100vw;
+    height: 50vh;
+    /* transition-delay: 3s ; */
+}
+
+#mobile_landing_top{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../images/mobile_Brian_selfie.png");
+    /* background-size: cover; */
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* transition-delay: 3s    ; */
+    transition: all .7s ease-in 2s;
+
+}
+
+
+#mobile_landing_bot{
+    max-height: 0px;
+
+
+}
+
+
+#mobile_landing_bot.mob_subcontainer{
+    max-height: 50vh;
+
+    transition: max-height 1s ease-in-out 1.8s;
+
+}
+.mob_subcontainer{
+    width: 100vw;
+    height: 50vh;
+    /* transition-delay: 2s; */
+    transition: max-height 1.25s ease-in 3s;
+}
+
+
+
+
+
+@keyframes typeout{
+    0%{
+        width:187px;
+        display: inline-block;
+    }
+30%,90%{
+    width:0;
+}
+100%{
+    width:0;
+    display:none;
+}
+}
