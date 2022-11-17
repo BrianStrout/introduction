@@ -1,7 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto+Mono:wght@600&family=Roboto:wght@500&display=swap');
-
-
 
 .mobile_landing_container{
     width: 100vw;
@@ -21,6 +18,7 @@
 #my_name_span{
     position: relative;
     overflow: hidden;
+    background-color: blue;
 }
 #my_name>h2{
     font-family: 'Roboto Mono', monospace;
@@ -32,9 +30,6 @@
     animation-fill-mode: forwards;
 }
 
-
-
-
 .mob_subcontainer{
     width: 100vw;
     height: 50vh;
@@ -44,20 +39,114 @@
 #mobile_landing_top{
     background-color: rgb(0, 0, 0);
     background-image: url("../images/mobile_Brian_selfie.png");
-    /* background-size: cover; */
     background-size: 90% auto;
     background-repeat: no-repeat;
     background-position: bottom;
-    /* transition-delay: 3s    ; */
     transition: all .7s ease-in 2s;
-
+    position: relative;
 }
+
+#linker{
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.example{
+  padding: 4px 2px;
+  text-align: center;
+}
+.button-group{
+    cursor: pointer;
+    display: inline-flex;
+    width: 50px;
+}
+
+
+.text{
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  letter-spacing: 3px;
+  transition: 400ms transform ease-in-out;
+  transform: rotateY(90deg);
+  transform-origin: left;
+  opacity: 0;
+  border: 4px solid rgb(255, 255, 255);
+  border-left: 0px;
+}
+
+.icon{
+  font-size: 24px;
+  min-width: 50px;
+  height: 50px;
+  line-height: 42px;
+  box-sizing: border-box;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+.icon > text{
+    color: aqua;
+}
+
+.button-group:hover{
+    transform: rotateY(0deg);
+    width: 150px;
+  }
+.button-group:hover .text{
+  transform: rotateY(0deg);
+  width: 150px;
+  opacity: 100%;
+}
+
+.button-group{
+  perspective: 200px;
+  perspective-origin: calc(100% - 95px);
+}
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #mobile_landing_bot{
     max-height: 0px;
-
-
+    /* display: none; */
+    background-color: lightgreen;
+    overflow: hidden;
 }
 
 
@@ -65,7 +154,6 @@
     max-height: 50vh;
 
     transition: max-height 1s ease-in-out 1.8s;
-
 }
 .mob_subcontainer{
     width: 100vw;
@@ -74,6 +162,11 @@
     transition: max-height 1.25s ease-in 3s;
 }
 
+
+.white{
+    background-color: azure;
+    overflow: hidden;
+}
 
 
 
