@@ -21,14 +21,17 @@ const App = () => {
 
 
 return (
-  <div className="main_container">
+
+  <>
+  {/* <div className="main_container"> */}
     {/* <Header /> */}
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<LandingSwitchBoard isMobile={isMobile} />} />
       </Routes>
 
 
-  </div>
+  {/* </div> */}
+  </>
 )
 }
 

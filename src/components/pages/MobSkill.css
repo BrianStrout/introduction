@@ -1,0 +1,23 @@
+.Skill_Container{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    padding: 10vw;
+    padding-top: 30px;
+}
+
+.Skill_Display{
+    background-color: azure;
+    padding: 5vw;
+    line-height: 1.5;
+}
+
+#listed_skills>li {
+padding-left: 1rem;
+}
+
+
+h4{
+    text-decoration: underline;
+    padding-top: .5rem;
+}

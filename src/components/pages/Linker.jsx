@@ -3,29 +3,33 @@ import { useRef, useState, useEffect } from 'react'
 import { IconContext } from 'react-icons'
 import {CgUserList, CgListTree, CgImage,CgProfile } from 'react-icons/cg'
 
-const Linker = () => {
+// const FancyButton = React.forwardRef(
+
+const Linker = (props) => {
     let linkRef = useRef();
-const [displayState, updateDisplayState] = useState("home");
+// const [displayState, updateDisplayState] = useState("home");
+
+console.log(props)
+
+const clicker =props.setChannel;
+// props.setChannel(displayState);
+
+const updateDisplayState=(chan) =>{
+clicker(chan)
+}
+
 let iconSize='30px';
 
 
-useEffect(() => {
-    let handler = (e) => {
-      console.log("handler activated");
-      if (!linkRef.current.contains(e.target)) {
-        updateDisplayState("home");
-        console.log("current state" + displayState);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  });
+
+ 
 
   return (
+
+
     <div id='linker'
-    ref={linkRef}>
+    ref={linkRef}
+    >
         <div className="example">
     <div className="button-group"
     onClick={()=>{updateDisplayState("intro")}}
