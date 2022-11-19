@@ -27,16 +27,15 @@ const linkRef = useRef();
 useEffect(() => {
 
   let blankClickHandler = (e) => {
-    console.log("handler activated");
-    if (!e.target.classList.contains('linker') || !e.target.classList.contains('intro_face') ) {
+    console.log(e.target);
+    if (e.target.id ==='mobile_landing_top') {
       setChannel("home");
       console.log(channel+"set");
     }
   };
 
-  // let calendarRef = useRef();
-      // <HeaderComponent calendarRef={calendarRef} />
-      // <Calendar ref={calendarRef} height="100vh" />
+
+  
 
   document.addEventListener("mousedown", blankClickHandler);
   return () => {

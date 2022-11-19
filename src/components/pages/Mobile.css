@@ -18,12 +18,10 @@
 .intro_face{
     width: 50%;
     height: 50vh;
-    /* transition-delay: 3s ; */
 }
 #my_name_span{
     position: relative;
     overflow: hidden;
-    /* background-color: blue; */
 }
 #my_name>h2{
     font-family: 'Roboto Mono', monospace;
@@ -75,22 +73,10 @@
     animation-delay: 2s;
 }
 
-
 @keyframes slideLeftToRight {
   from {transform: translateX(0vw)} 
   to {transform: translateX(100vw)}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .example{
   padding: 4px 2px;
@@ -101,7 +87,6 @@
     display: inline-flex;
     width: 50px;
 }
-
 
 .text{
   color: white;
@@ -145,38 +130,11 @@
   perspective-origin: calc(100% - 60px);
 }
   
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #mobile_landing_bot{
     max-height: 0px;
     /* display: none; */
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     overflow: hidden;
 }
 
