@@ -74,7 +74,7 @@ GoogleSheets API
     <div className='Portfolio_Slide'>
     <div className='slideTop'>
     <div className='Slide_Title'>
-    <h1>Fugitiva</h1>
+    <h1>React Store</h1>
     <ul className='test'>
 <li>
 <FaHtml5 />React
@@ -96,7 +96,7 @@ product API
     <div className='portfolio_IMG_wrap portfolio_IMG' alt="pIMG"></div>
     </div>
     </div>
-    <p>Target Design pulls product 
+    <p>Using the styling pattern for Target, this React coded store allows for clients to log in and save items to a wish list, or shop freely to their account.
     </p>
     </div>
 
