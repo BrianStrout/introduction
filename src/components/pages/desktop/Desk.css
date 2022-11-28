@@ -1,4 +1,38 @@
+:root{
+    --bump-to-right: 25vw;
+}
+
+.desk_home{
+    padding: 0 20vw;
+    background-color: rgb(165, 139, 139);
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+}
+
 .desk_container{
-    background-color: crimson;
-    height: 100vh;
+    height: 100vh;    
+    padding-left: var(--bump-to-right);
+    scroll-snap-align: start;
+}
+
+.dcontent{
+    background-color: coral;
+    padding: 1rem;
+}
+
+.desk_card{
+    width: var(--bump-to-right);
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+    position: fixed;
+    background-color: rgb(233, 7, 210);
+}
+
+.desk_card_photo{
+    background-image: url("../../images/mobile_Brian_selfie.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 400px;
 }

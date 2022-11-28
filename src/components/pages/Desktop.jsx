@@ -1,20 +1,24 @@
-import React from 'react'
-import DeskAbout from './desktop/DeskAbout'
-import DeskCard from './desktop/DeskCard'
-import DeskIntro from './desktop/DeskIntro'
-import DeskPortfolio from './desktop/DeskPortfolio'
-import DeskSkills from './desktop/DeskSkill'
+import React from 'react';
+import DeskAbout from './desktop/DeskAbout';
+import DeskCard from './desktop/DeskCard';
+import DeskIntro from './desktop/DeskIntro';
+import DeskPortfolio from './desktop/DeskPortfolio';
+import DeskSkills from './desktop/DeskSkill';
+import './desktop/Desk.css';
 
 
 const Desktop = () => {
   return (
-    <div>
+    <div className='desk_home'>
 
     <DeskCard />
-    <DeskAbout />
-    <DeskPortfolio />
-    <DeskSkills />
     <DeskIntro />
+    <DeskSkills />
+    <DeskPortfolio />
+    <DeskAbout />
+    
+  
+    
 
 
 
