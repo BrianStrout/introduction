@@ -10,7 +10,7 @@ const DeskPortfolio = () => {
         <p>
           As this site is meant to be used to display this young model's
           portfolio it was created with a focus on asthetic. It is coded in
-          React v6 with Framer.Motion
+          React v6 with Framer.Motion v.2
         </p>
         <br />
         <PortfolioMasha />

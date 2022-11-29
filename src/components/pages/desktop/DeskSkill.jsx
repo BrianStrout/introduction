@@ -1,6 +1,8 @@
 import React from "react";
+// import Ticker from "react-ticker";
 import "./Desk.css";
 import { CgFramer } from "react-icons/cg";
+import { GrDocumentVideo } from "react-icons/gr";
 import { FaReact, FaHtml5, FaCss3, FaGithub, FaNodeJs } from "react-icons/fa";
 import {
   SiMongodb,
@@ -8,7 +10,7 @@ import {
   SiAdobe,
   SiAbletonlive,
 } from "react-icons/si";
-import { GrDocumentVideo } from "react-icons/gr";
+import HTMLTicker from "./HTMLTicker";
 
 const DeskSkills = () => {
   return (
@@ -20,6 +22,8 @@ const DeskSkills = () => {
           <li>
             <FaHtml5 />
             HTML
+            {/* <HTMLTicker /> */}
+            {/* <Ticker>{() => "This is the Headline of element"}</Ticker> */}
           </li>
           <li>
             <FaCss3 />

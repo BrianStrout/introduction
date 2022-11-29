@@ -15,11 +15,17 @@ const DeskIntro = () => {
         </p>
         <br />
         <p>
-          In my previous life I most recently worked in facility management
-          overseeing staffing, vendor contracts, maintenance, and emergency work
-          for a high end residence building in Brookline Massachusetts. I have
-          always carried a systematic approach to solving problems and enjoy
-          incorporating creative approaches as I can.
+          In my previous life I worked in facility management overseeing
+          staffing, vendor contracts, maintenance, and emergency work for a high
+          end residence building in Brookline Massachusetts. I have supervised
+          multimillion dollars renovative projects, and been called in to stop
+          buildings from flooding in the middle of the night, and learned how to
+          navigate crises calmly and if possible with a smile. I have always
+          carried a systematic approach to solving problems both in team
+          environments and when work alone, all the while incorporating creative
+          approaches and solutions as I can. I look forward to melding my
+          previous work experiences and skills, creative approaches, and new
+          found skills as they continue to grow.
         </p>
       </div>
     </div>
