@@ -1,38 +1,82 @@
-:root{
-    --bump-to-right: 25vw;
+:root {
+  --bump-to-right: 25vw;
 }
 
-.desk_home{
-    padding: 0 20vw;
-    background-color: rgb(165, 139, 139);
-    overflow-y: hidden;
-    scroll-snap-type: y mandatory;
+.desk_home {
+  padding: 0 20vw;
+  background-color: rgb(165, 139, 139);
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.scroll_click {
+  scroll-snap-align: start;
+  opacity: 50%;
 }
 
-.desk_container{
-    height: 100vh;    
-    padding-left: var(--bump-to-right);
-    scroll-snap-align: start;
+.single {
 }
 
-.dcontent{
-    background-color: coral;
-    padding: 1rem;
+.desk_container {
+  height: 100vh;
+  /* overflow-y: hidden; */
+  padding-left: var(--bump-to-right);
+  position: relative;
+  /* background-color: yellow; */
+  border: 2px solid black;
 }
 
-.desk_card{
-    width: var(--bump-to-right);
-    padding: 5px;
-    border: 3px solid white;
-    border-radius: 10px;
-    position: fixed;
-    background-color: rgb(233, 7, 210);
+.dcontent {
+  background-color: coral;
+  padding: 1rem;
+  margin-top: 30px;
 }
 
-.desk_card_photo{
-    background-image: url("../../images/mobile_Brian_selfie.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    height: 400px;
+.dcontent > h2 {
+  font-size: 30px;
+}
+.dcontent > p {
+  text-indent: 50px;
+}
+
+.desk_card {
+  width: var(--bump-to-right);
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 10px;
+  position: fixed;
+  background-color: rgb(233, 7, 210);
+}
+
+.desk_card_photo {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.desk_card_title {
+  color: azure;
+}
+
+.dPortfolio {
+  position: relative;
+}
+
+.portfolio_linker {
+  position: absolute;
+  bottom: 10%;
+  left: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.portfolio_thumb {
+  width: 100px;
+  height: 140px;
+  background-color: mediumspringgreen;
 }
