@@ -22,8 +22,15 @@ const DeskCard = () => {
       </div>
 
       <div className="founders">
-        <div className="foundOn">
-          <span id="found_on">Found on</span>
+        <div className="found_on_sentence">
+          <span className="found_on">F</span>
+          <span className="found_on">o</span>
+          <span className="found_on">u</span>
+          <span className="found_on">n</span>
+          <span className="found_on">d </span>
+          {/* <span className="found_on">" " </span> */}
+          <span className="found_on">o</span>
+          <span className="found_on">n</span>
         </div>
         <div className="foundersButBox">
           <button className="find_buttons">GitHub</button>
