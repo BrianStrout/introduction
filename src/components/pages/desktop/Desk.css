@@ -149,7 +149,7 @@
 }
 .scroll_click {
   scroll-snap-align: start;
-  opacity: 50%;
+  /* opacity: 50%; */
 }
 
 .desk_container {
@@ -180,6 +180,7 @@
   border: 3px solid white;
   border-radius: 10px;
   position: fixed;
+  z-index: 1;
   background-color: rgb(233, 7, 210);
   padding: 0.5rem;
   background-image: url("../../images/mobile_Brian_selfie.png");
