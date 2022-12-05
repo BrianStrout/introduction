@@ -1,6 +1,6 @@
 import React from "react";
 import "./Desk.css";
-import PortfolioMasha from "./Portfolio_Masha";
+import PortfolioMasha from "./Desk_Portfolio_Slides/Desk_Portfolio_Masha";
 
 const DeskPortfolio = () => {
   return (

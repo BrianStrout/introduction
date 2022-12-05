@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Space+Mono&display=swap");
 
+.mapicon {
+  background-color: rgba(105, 250, 255, 0.396);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .brianjstrout {
   font-family: "Source Serif Pro", serif;
   margin-bottom: -10px;
@@ -77,17 +85,6 @@
   animation-delay: 1350ms;
 }
 
-/* @-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-} */
-
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -95,7 +92,7 @@
     opacity: 0.8;
   }
 
-  70% {
+  80% {
     transform: scale(1);
     /* text-shadow: 100 20 0 rgba(255, 255, 255, 1); */
     opacity: 0.8;
@@ -118,8 +115,10 @@
   grid-template-rows: 30px auto;
 
   width: 100%;
-  background-color: blue;
+  background-color: rgba(216, 216, 251, 0.321);
   grid-area: bot;
+
+  border-radius: 5px;
 }
 .foundersButBox {
   display: flex;
@@ -162,7 +161,7 @@
 }
 
 .dcontent {
-  background-color: coral;
+  background-color: rgba(231, 206, 197, 0.731);
   padding: 1rem;
   margin-top: 30px;
 }
@@ -181,7 +180,7 @@
   border-radius: 10px;
   position: fixed;
   z-index: 1;
-  background-color: rgb(233, 7, 210);
+  /* background-color: rgb(233, 7, 210); */
   padding: 0.5rem;
   background-image: url("../../images/mobile_Brian_selfie.png");
   background-repeat: no-repeat;
@@ -197,7 +196,7 @@
 }
 
 .desk_card_title {
-  color: rgb(7, 202, 202);
+  /* color: rgb(18, 91, 91); */
   position: relative;
   top: 0;
   width: 100%;
@@ -205,10 +204,11 @@
 }
 
 .desk_card_map {
+  /* background-color: rgba(233, 150, 122, 0.386); */
   grid-area: "mid";
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .dPortfolio {
@@ -216,7 +216,7 @@
 }
 
 .portfolio_linker {
-  background-color: violet;
+  /* background-color: violet; */
   position: absolute;
   bottom: 10px;
   left: 30px;
@@ -228,4 +228,19 @@
   width: 100px;
   height: 140px;
   background-color: mediumspringgreen;
+}
+
+.mapicon {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.icon_disp {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

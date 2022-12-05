@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Desk.css";
 import DeskLinker from "./DeskLinker";
 import OnScreenHook from "./OnScreenHook";
@@ -52,8 +52,6 @@ const DeskCard = (props) => {
     setCurrentlyViewing("about");
   }
 
-  console.log(currentlyViewing, +"iiii");
-
   return (
     <div className="desk_card">
       {/* <div className="desk_card_photo"> */}
@@ -69,7 +67,7 @@ const DeskCard = (props) => {
       </div>
 
       <div className="desk_card_map">
-        <DeskLinker />
+        <DeskLinker currentlyViewing={currentlyViewing} />
       </div>
 
       <div className="founders">
@@ -84,13 +82,39 @@ const DeskCard = (props) => {
           <span className="found_on">n</span>
         </div>
         <div className="foundersButBox">
-          <h2>{introVisible ? "intro " : null}</h2>
-          <h2>{skillsVisible ? "skills " : null}</h2>
-          <h2>{portVisible ? "port " : null}</h2>
-          <h2>{aboutVisible ? "about " : null}</h2>
-          <button className="find_buttons">GitHub</button>
-          <button className="find_buttons">LinkedIn</button>
-          <button className="find_buttons">www.</button>
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://github.com/bstrout";
+            }}
+          >
+            GitHub
+          </button>
+
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              // e.preventDefault();
+              window.location.href =
+                "https://www.linkedin.com/in/brian-strout-a11a8bb9/";
+            }}
+          >
+            LinkedIn
+          </button>
+
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "http://www.strout.co";
+            }}
+          >
+            www.
+          </button>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import {
 } from "react-icons/si";
 import { GrDocumentVideo } from "react-icons/gr";
 
-const PortfolioMasha = () => {
+const Desk_PortfolioMasha = () => {
   return (
     <div>
       <h1>Masha</h1>
@@ -40,4 +40,4 @@ const PortfolioMasha = () => {
   );
 };
 
-export default PortfolioMasha;
+export default Desk_PortfolioMasha;

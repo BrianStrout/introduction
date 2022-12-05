@@ -23,7 +23,7 @@ const OnScreenHook = (options, targetRef) => {
     };
   }, [targetRef, options]);
 
-  return <h1>fillerer</h1>;
+  return isVisible;
 };
 
 export default OnScreenHook;
