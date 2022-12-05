@@ -7,6 +7,10 @@ import MobSkill from './MobSkill';
 
 
 const MobSwitchDisplay = (props) => {
+
+console.log("mobile switch props", props);
+
+
 let tvSignal = (props.channel);
 
 if(tvSignal === 'home') {

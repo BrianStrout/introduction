@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
 }
+
 .mobile_landing_container{
     width: 100%;
     max-width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    padding: 5vw;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: black;
@@ -33,23 +35,22 @@
     animation-fill-mode: forwards;
 }
 
-.mob_subcontainer{
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    /* transition-delay: 3s ; */
-}
 
 #mobile_landing_top{
     /* background-color: rgb(0, 0, 0); */
     background-image: url("../images/mobile_Brian_selfie.png");
-    background-size: 90% auto;
+    /* background-size: 90% auto; */
     background-repeat: no-repeat;
     background-position: bottom;
     transition: all .7s ease-in 2s;
     position: relative;
     width: 90%;
+    height: 50vh;
+
 }
+
+
+
 
 #linker{
     background-color: transparent;
@@ -133,23 +134,30 @@
 
 #mobile_landing_bot{
     max-height: 0px;
-    /* display: none; */
-    /* background-color: lightgreen; */
     overflow: hidden;
 }
 
 
 #mobile_landing_bot.mob_subcontainer{
     max-height: 50vh;
-
     transition: max-height 1s ease-in-out 1.8s;
     overflow: scroll;
 }
+
+
+
 .mob_subcontainer{
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
+    /* height: auto; */
     transition: max-height 1.25s ease-in 3s;
 }
+
+.mob_subcontainer_bumped{
+    height: 70vh;
+    transition: max-height 1.25s ease-in 3s;
+}
+
 
 
 .white{
@@ -172,4 +180,9 @@
     width:0;
     display:none;
 }
+}
+
+
+.adjusted{
+    background-size: 250px;
 }

@@ -1,18 +1,12 @@
-import React from 'react'
-import Desktop from './Desktop';
-import Mobile from './Mobile'
-
+import React from "react";
+import Desktop from "./Desktop";
+import Mobile from "./Mobile";
 
 const LandingSwitchBoard = (props) => {
+  const mobileDetect = props.isMobile;
+  console.log(mobileDetect);
 
-const mobileDetect = props.isMobile;
-console.log(mobileDetect);
+  return <div>{mobileDetect ? <Mobile /> : <Desktop />}</div>;
+};
 
-  return (
-    <div>
-            {mobileDetect ? <Mobile /> : <Desktop />  }
-    </div>
-  )
-}
-
-export default LandingSwitchBoard
+export default LandingSwitchBoard;

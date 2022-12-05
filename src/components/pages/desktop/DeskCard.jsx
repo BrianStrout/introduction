@@ -113,7 +113,7 @@ const DeskCard = (props) => {
               window.location.href = "http://www.strout.co";
             }}
           >
-            www.
+            www.Str
           </button>
         </div>
       </div>

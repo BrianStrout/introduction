@@ -3,19 +3,17 @@ import { useRef, useState, useEffect } from 'react'
 import { IconContext } from 'react-icons'
 import {CgUserList, CgListTree, CgImage,CgProfile } from 'react-icons/cg'
 
-// const FancyButton = React.forwardRef(
 
 const Linker = (props) => {
     let linkRef = useRef();
-// const [displayState, updateDisplayState] = useState("home");
-
-console.log(props)
+    
+// console.log(props)
 
 const clicker =props.setChannel;
-// props.setChannel(displayState);
 
 const updateDisplayState=(chan) =>{
 clicker(chan)
+console.log(chan + " is chan")
 }
 
 let iconSize='30px';
