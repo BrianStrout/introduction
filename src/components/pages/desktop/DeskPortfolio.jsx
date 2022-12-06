@@ -14,19 +14,19 @@ import { FaHandHolding } from "react-icons/fa";
 const DeskPortfolio = () => {
   const [portfolioCalled, updatePortfolioCalled] = useState(<PortfolioIntro />);
 
-  const handleClickForSlide = (name) => updatePortfolioCalled(name);
+  const [isShowing, updateIsShowing] = useState("true");
 
-  // if (portfolioCalled === "PortfolioMasha")
   return (
     <div className="desk_container">
       <div className="dPortfolio dcontent">
         <h2>Portfolio</h2>
         <p>
-          As this site is meant to be used to display this young model's
-          portfolio it was created with a focus on asthetic. It is coded in
-          React v6 with Framer.Motion v.2
+          Here are some examples of projects I have done independently along my
+          journey...
         </p>
-        <h6></h6>
+
+        <br />
+        <br />
         <br />
         {/* <PortfolioMasha /> */}
         {portfolioCalled}
@@ -35,45 +35,63 @@ const DeskPortfolio = () => {
       <div className="portfolio_linker">
         <div className="portfolio_linker_row">
           <div
-            className="portfolio_thumb"
-            onClick={() => handleClickForSlide(<PortfolioMasha />)}
+            className="portfolio_thumb "
+            onClick={() => updatePortfolioCalled(<PortfolioMasha />)}
           >
-            Masha
+            <div className="thumb_names">
+              <h5> Masha</h5>
+            </div>
+            <div id="portfolio_thumb_masha" className="thumb_pics"></div>
           </div>
 
           <div
             className="portfolio_thumb"
-            onClick={() => handleClickForSlide(<PortfolioFugitiva />)}
+            onClick={() => updatePortfolioCalled(<PortfolioFugitiva />)}
           >
-            La Fugitiva
+            <div className="thumb_names">
+              <h5> fu</h5>
+            </div>
+            <div id="portfolio_thumb_fugitiva" className="thumb_pics"></div>
           </div>
           <div
             className="portfolio_thumb"
-            onClick={() => handleClickForSlide(<PortfolioTarget />)}
+            onClick={() => updatePortfolioCalled(<PortfolioTarget />)}
           >
-            Target
+            <div className="thumb_names">
+              <h5> Target</h5>
+            </div>
+            <div id="portfolio_thumb_target" className="thumb_pics"></div>
           </div>
         </div>
 
         <div className="portfolio_linker_row">
           <div
             className="portfolio_thumb"
-            onClick={() => handleClickForSlide(<PortfolioGames />)}
+            onClick={() => updatePortfolioCalled(<PortfolioGames />)}
           >
-            Games
+            <div className="thumb_names">
+              <h5> Games</h5>
+            </div>
+            <div id="portfolio_thumb_games" className="thumb_pics"></div>
           </div>
 
           <div
             className="portfolio_thumb"
-            onClick={() => handleClickForSlide(<PortfolioTodo />)}
+            onClick={() => updatePortfolioCalled(<PortfolioTodo />)}
           >
-            ToDo
+            <div className="thumb_names">
+              <h5> To Do</h5>
+            </div>
+            <div id="portfolio_thumb_todo" className="thumb_pics"></div>
           </div>
           <div
             className="portfolio_thumb"
-            onClick={() => handleClickForSlide(<PortfolioIntro />)}
+            onClick={() => updatePortfolioCalled(<PortfolioIntro />)}
           >
-            Intro
+            <div className="thumb_names">
+              <h5> Intro</h5>
+            </div>
+            <div id="portfolio_thumb_intro" className="thumb_pics"></div>
           </div>
         </div>
       </div>

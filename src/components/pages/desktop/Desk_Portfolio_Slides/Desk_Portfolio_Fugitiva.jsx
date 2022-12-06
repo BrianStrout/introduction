@@ -1,6 +1,7 @@
 import React from "react";
 import { CgFramer } from "react-icons/cg";
 import { FaReact, FaHtml5, FaCss3, FaGithub, FaNodeJs } from "react-icons/fa";
+import { AiOutlineApi } from "react-icons/ai";
 import {
   SiMongodb,
   SiJavascript,
@@ -8,6 +9,7 @@ import {
   SiAbletonlive,
 } from "react-icons/si";
 import { GrDocumentVideo } from "react-icons/gr";
+import { AiOutlineAim } from "react-icons/ai";
 
 const Desk_PortfolioMasha = () => {
   return (
@@ -15,15 +17,18 @@ const Desk_PortfolioMasha = () => {
       <h1>Fugi</h1>
       <ul className="test">
         <li>
-          <FaReact />
-          React
+          <FaHtml5 />
+          Html
         </li>
         <li>
           <FaCss3 /> Css
         </li>
         <li>
-          <CgFramer />
-          Framer Motion
+          <SiJavascript /> Javscript
+        </li>
+        <li>
+          <AiOutlineApi />
+          GoogleSheets API
         </li>
       </ul>
       {/* </div>

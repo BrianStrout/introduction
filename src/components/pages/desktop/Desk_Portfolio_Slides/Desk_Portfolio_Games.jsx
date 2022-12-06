@@ -15,15 +15,14 @@ const Desk_PortfolioMasha = () => {
       <h1>Games</h1>
       <ul className="test">
         <li>
-          <FaReact />
-          React
+          <FaHtml5 />
+          HTML
         </li>
         <li>
           <FaCss3 /> Css
         </li>
         <li>
-          <CgFramer />
-          Framer Motion
+          <SiJavascript /> Javascript
         </li>
       </ul>
       {/* </div>

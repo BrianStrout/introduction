@@ -25,7 +25,7 @@ const DeskLinker = (props) => {
   return (
     <div className="mapicon" ref={deskLinkRef}>
       {/* <div className="icon"> */}
-      <IconContext.Provider value={{ color: "black", size: deskIconSize }}>
+      <IconContext.Provider value={{ color: "#dcd7c9", size: deskIconSize }}>
         <div className="icon_disp">{iconMatch}</div>
       </IconContext.Provider>
     </div>

@@ -8,10 +8,17 @@ const DeskIntro = () => {
         <h2>My Professional Development...</h2>
         <br />
         <p>
+          Hello! My name is Brian Strout and I am a Jr. Front-End Web Developer
+          looking for a good career opportunity with a company that would
+          appreciate my self-taught, self-driven work ethic, as I further my
+          understanding of the endless ways to keep improving.
+        </p>
+        <br />
+        <p>
           Thus far the core of my learning has revolved around The Odin
-          Project's Foundation and Full Stack Javascript curricullum, and
-          branching off into independent studies as needed. I have learned and
-          worked with HTML, CSS, JavaScript, React and MongoDB.
+          Project's Foundational and Full Stack Javascript curricula, with many
+          a fun rabbit hold found along the way. I have learned and worked with
+          HTML, CSS, JavaScript, React, Jest, and MongoDB.
         </p>
         <br />
         <p>

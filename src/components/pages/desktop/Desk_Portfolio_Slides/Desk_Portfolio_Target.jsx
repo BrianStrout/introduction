@@ -22,8 +22,8 @@ const Desk_PortfolioMasha = () => {
           <FaCss3 /> Css
         </li>
         <li>
-          <CgFramer />
-          Framer Motion
+          <SiMongodb />
+          Mongo DB
         </li>
       </ul>
       {/* </div>

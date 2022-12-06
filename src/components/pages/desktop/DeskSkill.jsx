@@ -9,7 +9,9 @@ import {
   SiJavascript,
   SiAdobe,
   SiAbletonlive,
+  SiJest,
 } from "react-icons/si";
+import { SlPaperClip } from "react-icons/sl";
 import HTMLTicker from "./HTMLTicker";
 
 const DeskSkills = () => {
@@ -17,13 +19,12 @@ const DeskSkills = () => {
     <div className="desk_container">
       <div className="dSkills dcontent">
         <h2>Skill Set</h2>
+        <br />
         <ul id="listed_skills">
           <h4>Front End</h4>
           <li>
             <FaHtml5 />
             HTML
-            {/* <HTMLTicker /> */}
-            {/* <Ticker>{() => "This is the Headline of element"}</Ticker> */}
           </li>
           <li>
             <FaCss3 />
@@ -39,6 +40,9 @@ const DeskSkills = () => {
           </li>
           <li>
             <CgFramer /> Framer Motion
+          </li>
+          <li>
+            <SiJest /> Jest
           </li>
           <h4>Back End</h4>
           <li>
@@ -66,6 +70,15 @@ const DeskSkills = () => {
           <li>
             <SiAbletonlive />
             Ableton Live
+          </li>
+          <h4>Administrative</h4>
+          <li>
+            <SlPaperClip />
+            Google Sheets- spreadsheet layout and data functions
+          </li>
+          <li>
+            <SlPaperClip />
+            YAMM - mailer mergers
           </li>
         </ul>
       </div>

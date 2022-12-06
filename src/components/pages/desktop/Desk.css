@@ -1,22 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Source+Serif+Pro&family=Space+Mono&display=swap");
 
 :root {
-  --bump-to-right: 25vw;
+  --bump-to-right: 450px;
   --space-below-card: calc(100% - 540px);
+  /* --widescreen-padding: calc(100% -); */
+
+  --color-base: #2c3639;
+  --color-base-acc: #3f4e4f;
+  --color-primary: #dcd7c9;
+  --color-primary-gradl: linear-gradient(
+    to right,
+    var(--color-primary),
+    transparent
+  );
+  --color-primary-gradr: linear-gradient(
+    to right,
+    transparent,
+    transparent,
+    var(--color-primary)
+  );
+  --color-compliment: #a27b5c;
+  --color-accent: #fff8e6;
+  --color-font: black;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+:root {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+p {
+  color: var(black);
+  font-size: 1.25rem;
+}
+
+/* Foundation */
+.desk_shell {
+  width: 100%;
+  background-color: var(--color-base);
+  display: flex;
+  justify-content: center;
+}
+
+.desk_home {
+  min-width: 1240px;
+  max-width: 1340px;
+  background-color: var(--color-base);
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.scroll_click {
+  scroll-snap-align: start;
+}
+
+/* Business card */
+.desk_card {
+  width: var(--bump-to-right);
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 5;
+  margin-top: 10px;
+  padding: 0.5rem;
+  background-image: url("../../images/mobile_Brian_selfie.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 520px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 1fr 15%;
+  grid-template-areas: "top" "mid" "bot";
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.desk_card_title {
+  position: relative;
+  top: 0;
+  width: 100%;
+  grid-area: "top";
+}
+
+.desk_card_map {
+  grid-area: "mid";
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
 }
 
 .mapicon {
-  background-color: rgba(105, 250, 255, 0.396);
+  background-color: var(--color-accent);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.desk_card_title_ltr {
+  background-image: var(--color-primary-gradl);
+  padding-left: 5px;
+  border-radius: 2px;
+}
+.desk_card_title_rtl {
+  background-image: var(--color-primary-gradr);
+  padding-right: 5px;
+  border-radius: 2px;
+}
+
 .brianjstrout {
   font-family: "Source Serif Pro", serif;
   margin-bottom: -10px;
-  /* display: inline-block; */
 }
 
 .jobtitle {
@@ -50,10 +155,18 @@
 .found_on {
   font-family: "Space Mono", monospace;
   display: inline-block;
-  color: rgb(255, 255, 255);
+  color: var(--color-font);
   top: 0;
   width: auto;
-  animation: pulse 2s infinite;
+  animation: pulse 4s infinite;
+}
+.found_on_ {
+  font-family: "Space Mono", monospace;
+  display: inline-block;
+  color: transparent;
+  top: 0;
+  width: auto;
+  animation: pulse 4s infinite;
 }
 
 .found_on_sentence span:nth-child(1) {
@@ -83,40 +196,45 @@
 .found_on_sentence span:nth-child(9) {
   animation-delay: 1350ms;
 }
-
+.found_on_sentence span:nth-child(10) {
+  animation-delay: 1500ms;
+}
+.found_on_sentence span:nth-child(11) {
+  animation-delay: 1650ms;
+}
+.found_on_sentence span:nth-child(12) {
+  animation-delay: 1800ms;
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
     /* text-shadow: 0px 0px 0 rgba(255, 255, 255, 0); */
-    opacity: 0.8;
+    opacity: 0.6;
   }
-
   80% {
     transform: scale(1);
     /* text-shadow: 100 20 0 rgba(255, 255, 255, 1); */
-    opacity: 0.8;
+    opacity: 0.6;
   }
   90% {
-    transform: scale(1.02);
+    transform: scale(1.03);
     /* text-shadow: 100 20 10px rgba(255, 255, 255, 1); */
     opacity: 1;
   }
-
   100% {
     transform: scale(1);
     /* text-shadow: 100px 20px 0 rgba(255, 255, 255, 1); */
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 .founders {
   display: grid;
-  grid-template-rows: 30px auto;
-
+  grid-template-rows: 28px auto;
   width: 100%;
-  background-color: rgba(216, 216, 251, 0.321);
+  background-color: var(--color-primary);
   grid-area: bot;
-
+  border: 4px solid var(--color-compliment);
   border-radius: 5px;
 }
 .foundersButBox {
@@ -133,32 +251,24 @@
   width: 20%;
 }
 
-.desk_home {
-  padding: 0 20vw;
-  background-color: rgb(165, 139, 139);
-  overflow-y: hidden;
-  scroll-snap-type: y mandatory;
-  max-height: 100vh;
-  overflow-y: scroll;
-}
-.scroll_click {
-  scroll-snap-align: start;
-  /* opacity: 50%; */
-}
+/* Pages */
 
 .desk_container {
   height: 100vh;
-  /* overflow-y: hidden; */
   padding-left: var(--bump-to-right);
   position: relative;
-  /* background-color: yellow; */
-  border: 2px solid black;
+  border: 2px solid var(--color-accent);
 }
 
 .dcontent {
-  background-color: rgba(231, 206, 197, 0.731);
+  background-color: var(--color-primary);
   padding: 1rem;
-  margin-top: 30px;
+  margin: 30px 15px;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  border: 5px solid var(--color-primary);
+  box-shadow: inset 6px 6px var(--color-compliment),
+    inset -6px -6px var(--color-compliment);
 }
 
 .dcontent > h2 {
@@ -168,43 +278,23 @@
   text-indent: 50px;
 }
 
-.desk_card {
-  width: var(--bump-to-right);
-  padding: 15px;
-  border: 3px solid white;
-  border-radius: 10px;
-  position: fixed;
-  z-index: 1;
-  /* background-color: rgb(233, 7, 210); */
-  padding: 0.5rem;
-  background-image: url("../../images/mobile_Brian_selfie.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  height: 520px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 25% 1fr 15%;
-  grid-template-areas: "top" "mid" "bot";
-  flex-direction: column;
-  padding-bottom: 1rem;
+/* SKILLS */
+#listed_skills {
+  margin-left: 10%;
+  margin-bottom: 2rem;
+}
+#listed_skills > h4 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.desk_card_title {
-  /* color: rgb(18, 91, 91); */
-  position: relative;
-  top: 0;
-  width: 100%;
-  grid-area: "top";
+#listed_skills > li {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
-.desk_card_map {
-  /* background-color: rgba(233, 150, 122, 0.386); */
-  grid-area: "mid";
-  display: flex;
-  justify-content: end;
-  align-items: flex-start;
-}
+/* PORTFOLIO   */
 
 .dPortfolio {
   position: relative;
@@ -213,9 +303,7 @@
 .portfolio_linker {
   height: var(--space-below-card);
   width: var(--bump-to-right);
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: black;
+
   position: absolute;
   bottom: 10px;
   left: 0px;
@@ -223,21 +311,75 @@
   grid-template-rows: 1fr 1fr;
   gap: 0px;
   align-content: space-around;
-  /* justify-content: space-around; */
 }
 
 .portfolio_linker_row {
   width: 100%;
+  padding: 0 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .portfolio_thumb {
+  position: relative;
   width: 100%;
   height: 140px;
-  background-color: mediumspringgreen;
+}
+
+.thumb_names {
+  width: 100%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-accent);
+  position: absolute;
+  z-index: 0;
+}
+
+.thumb_names > h5 {
+  font-family: "Crimson Text", serif;
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.thumb_pics {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position-y: 0px;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+.thumb_pics:hover {
+  transform: translateY(42px);
+}
+
+#portfolio_thumb_masha {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+}
+
+#portfolio_thumb_fugitiva {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+}
+#portfolio_thumb_target {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+}
+#portfolio_thumb_games {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+}
+#portfolio_thumb_todo {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+}
+#portfolio_thumb_intro {
+  background-image: url("../../images/mobile_Brian_selfie.png");
+}
+
+.glow {
+  box-shadow: 0px 0px 25px 0px yellow, inset 0px 0px 35px 0px rgb(255, 67, 255);
 }
 
 .mapicon {
@@ -246,11 +388,29 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 4px solid black;
+  background-color: var(--color-compliment);
 }
+
 .icon_disp {
-  /* background-color: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ABOUT */
+
+#fun_facts {
+  margin-left: 10%;
+  margin-bottom: 2rem;
+}
+#fun_facts > h4 {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#fun_facts > li {
+  margin-left: 10px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }

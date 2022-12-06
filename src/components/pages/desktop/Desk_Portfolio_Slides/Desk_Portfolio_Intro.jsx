@@ -21,10 +21,7 @@ const Desk_PortfolioMasha = () => {
         <li>
           <FaCss3 /> Css
         </li>
-        <li>
-          <CgFramer />
-          Framer Motion
-        </li>
+        <li>??</li>
       </ul>
       {/* </div>
           <div className="portfolio_IMG_wrap">

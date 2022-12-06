@@ -57,13 +57,15 @@ const DeskCard = (props) => {
       {/* <div className="desk_card_photo"> */}
 
       <div className="desk_card_title">
-        <h2 className="brianjstrout">Brian J. Strout</h2>
-        <span className="jobtitle"> Jr.Front-End Web Developer</span>
-        <br />
-
-        <span id="bctowna">Boston & Lisbon Based</span>
-        <span id="bcemail">BrianJStrout@gmail.com</span>
-        {/* <span id="bcnumber">+351 926 475 457</span> */}
+        <div className="desk_card_title_ltr">
+          <h2 className="brianjstrout">Brian J. Strout</h2>
+          <span className="jobtitle"> Jr.Front-End Web Developer</span>
+        </div>
+        <div className="desk_card_title_rtl">
+          <span id="bctowna">Boston & Lisbon Based</span>
+          <span id="bcemail">BrianJStrout@gmail.com</span>
+          {/* <span id="bcnumber">+351 926 475 457</span> */}
+        </div>
       </div>
 
       <div className="desk_card_map">
@@ -77,9 +79,12 @@ const DeskCard = (props) => {
           <span className="found_on">u</span>
           <span className="found_on">n</span>
           <span className="found_on">d </span>
-          {/* <span className="found_on">" " </span> */}
+          <span className="found_on_">_</span>
           <span className="found_on">o</span>
           <span className="found_on">n</span>
+          <span className="found_on">.</span>
+          <span className="found_on">.</span>
+          <span className="found_on">.</span>
         </div>
         <div className="foundersButBox">
           <button

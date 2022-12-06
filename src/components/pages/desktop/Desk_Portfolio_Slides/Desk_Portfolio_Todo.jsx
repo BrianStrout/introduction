@@ -8,6 +8,7 @@ import {
   SiAbletonlive,
 } from "react-icons/si";
 import { GrDocumentVideo } from "react-icons/gr";
+import { AiOutlineAim, AiOutlineApi } from "react-icons/ai";
 
 const Desk_PortfolioMasha = () => {
   return (
@@ -15,15 +16,18 @@ const Desk_PortfolioMasha = () => {
       <h1>ToDo</h1>
       <ul className="test">
         <li>
-          <FaReact />
-          React
+          <FaHtml5 />
+          HTML
         </li>
         <li>
           <FaCss3 /> Css
         </li>
         <li>
-          <CgFramer />
-          Framer Motion
+          <SiJavascript />
+          JavaScript
+        </li>
+        <li>
+          <AiOutlineApi /> Smoother scroller?
         </li>
       </ul>
       {/* </div>
