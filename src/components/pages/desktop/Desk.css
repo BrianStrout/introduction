@@ -38,6 +38,7 @@
 p {
   color: var(black);
   font-size: 1.25rem;
+  margin: 0 1rem;
 }
 
 /* Foundation */
@@ -261,6 +262,7 @@ p {
 }
 
 .dcontent {
+  min-height: 90vh;
   background-color: var(--color-primary);
   padding: 1rem;
   margin: 30px 15px;
@@ -303,7 +305,6 @@ p {
 .portfolio_linker {
   height: var(--space-below-card);
   width: var(--bump-to-right);
-
   position: absolute;
   bottom: 10px;
   left: 0px;
@@ -396,6 +397,59 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.d_port_slide_grid_case {
+  display: grid;
+  height: 70vh;
+  padding: 1rem;
+  margin: 0 2rem;
+  background-color: brown;
+  grid-template-rows: 4rem 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "s_header s_header"
+    "s_list s_image"
+    "s_description s_description";
+  border: 5px solid black;
+}
+.d_port_slide_grid_header {
+  grid-area: s_header;
+  background-color: #a27b5c;
+  padding-left: 1rem;
+}
+.d_port_slide_grid_list {
+  grid-area: s_list;
+  background-color: red;
+  padding: 1.5rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.d_port_slide_grid_list > ul > li {
+  font-size: 1.25rem;
+}
+
+.d_port_slide_grid_image {
+  grid-area: s_image;
+  background-color: burlywood;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.d_port_slide_grid_desc {
+  grid-area: s_description;
+  padding: 1rem;
+}
+.d_port_slide_grid_links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: aquamarine;
+}
+.d_port_slide_grid_links > button {
+  width: 25%;
 }
 
 /* ABOUT */

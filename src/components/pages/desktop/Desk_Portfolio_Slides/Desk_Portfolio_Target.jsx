@@ -11,31 +11,61 @@ import { GrDocumentVideo } from "react-icons/gr";
 
 const Desk_PortfolioMasha = () => {
   return (
-    <div>
-      <h1>Target</h1>
-      <ul className="test">
-        <li>
-          <FaReact />
-          React
-        </li>
-        <li>
-          <FaCss3 /> Css
-        </li>
-        <li>
-          <SiMongodb />
-          Mongo DB
-        </li>
-      </ul>
-      {/* </div>
-          <div className="portfolio_IMG_wrap">
-            <div className="portfolio_IMG_wrap portfolio_IMG" alt="pIMG"></div>
-          </div>
-        </div> */}
-      <p>
-        As this site is meant to be used to display this young model's portfolio
-        it was created with a focus on asthetic. It is coded in React v6 with
-        Framer.Motion{" "}
-      </p>
+    <div className="d_port_slide_grid_case">
+      <div className="d_port_slide_grid_header">
+        {" "}
+        <h1>Target</h1>
+      </div>
+      <div className="d_port_slide_grid_list">
+        <ul className="test">
+          <span className="underline"> made with...</span>
+          <li>
+            <FaReact />
+            React
+          </li>
+          <li>
+            <FaCss3 /> Css
+          </li>
+          <li>
+            <SiMongodb />
+            Mongo DB
+          </li>
+        </ul>
+      </div>
+      <div className="d_port_slide_grid_image">
+        {" "}
+        <div className="d_port_slide_grid_links">
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://github.com/bstrout";
+            }}
+          >
+            View Code
+          </button>
+
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              // e.preventDefault();
+              window.location.href = "https://www.netlify.com";
+            }}
+          >
+            Live Preview
+          </button>
+        </div>
+      </div>
+      <div className="d_port_slide_grid_desc">
+        {" "}
+        <p>
+          As this site is meant to be used to display this young model's
+          portfolio it was created with a focus on asthetic. It is coded in
+          React v6 with Framer.Motion{" "}
+        </p>
+      </div>
     </div>
   );
 };

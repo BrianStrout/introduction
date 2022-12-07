@@ -13,34 +13,61 @@ import { AiOutlineAim } from "react-icons/ai";
 
 const Desk_PortfolioMasha = () => {
   return (
-    <div>
-      <h1>Fugi</h1>
-      <ul className="test">
-        <li>
-          <FaHtml5 />
-          Html
-        </li>
-        <li>
-          <FaCss3 /> Css
-        </li>
-        <li>
-          <SiJavascript /> Javscript
-        </li>
-        <li>
-          <AiOutlineApi />
-          GoogleSheets API
-        </li>
-      </ul>
-      {/* </div>
-          <div className="portfolio_IMG_wrap">
-            <div className="portfolio_IMG_wrap portfolio_IMG" alt="pIMG"></div>
-          </div>
-        </div> */}
-      <p>
-        As this site is meant to be used to display this young model's portfolio
-        it was created with a focus on asthetic. It is coded in React v6 with
-        Framer.Motion{" "}
-      </p>
+    <div className="d_port_slide_grid_case">
+      <div className="d_port_slide_grid_header">
+        <h1>La Fugitiva</h1>
+      </div>
+      <div className="d_port_slide_grid_list">
+        <ul className="test">
+          <span className="underline"> made with...</span>
+          <li>
+            <FaHtml5 />
+            Html
+          </li>
+          <li>
+            <FaCss3 /> Css
+          </li>
+          <li>
+            <SiJavascript /> Javscript
+          </li>
+          <li>
+            <AiOutlineApi />
+            GoogleSheets API
+          </li>
+        </ul>
+      </div>
+      <div className="d_port_slide_grid_image">
+        <div className="d_port_slide_grid_links">
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://github.com/bstrout";
+            }}
+          >
+            View Code
+          </button>
+
+          <button
+            className="find_buttons"
+            type="button"
+            onClick={(e) => {
+              // e.preventDefault();
+              window.location.href = "https://www.netlify.com";
+            }}
+          >
+            Live Preview
+          </button>
+        </div>
+      </div>
+      <div className="d_port_slide_grid_desc">
+        <p>
+          As this site is meant to be used to display this young model's
+          portfolio it was created with a focus on asthetic. It is coded in
+          React v6 with Framer.Motion{" "}
+        </p>
+      </div>
     </div>
   );
 };
